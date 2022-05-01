@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-  shippingInfor: {
+  shippingInfo: {
     address: {
       type: String,
       required: true,
@@ -90,7 +90,7 @@ const orderSchema = new mongoose.Schema({
   },
   deliveredAt: Date,
   createdAt: {
-    Date,
+    type: Date,
     default: Date.now(),
   },
 });
